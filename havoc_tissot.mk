@@ -22,12 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/syberia/config/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
+IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := syberia_tissot
+PRODUCT_NAME := havoc_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -44,5 +48,3 @@ BUILD_FINGERPRINT :=  "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/rele
 
 # Offline Charging
 TARGET_INCLUDE_PIXEL_CHARGER := true
-
-SYBERIA_BUILD_TYPE := UNOFFICIAL
