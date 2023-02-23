@@ -12,9 +12,9 @@
     "remote": "github"
   },
   {
-    "repository": "ajitlenka30/android_kernel_xiaomi_msm8953",
+    "repository": "Anothermi1/cakeby_kernel_tissot",
     "target_path": "kernel/xiaomi/msm8953",
-    "branch":"eleven",
+    "branch":"NON-OC",
     "remote":"github"
   },
   {
